@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>
+    <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="fade-in">Stardust Donations</h1>
+    </header>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+      <label for="visit">When did you last visit our charity fund raisers?</label>
+      <input type="date" id="visit" name="visit" required>
+
+      <label for="rating">How would you rate your experience at our charity functions?</label>
+      <select id="rating" name="rating" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="excellent">Excellent</option>
+        <option value="good">Good</option>
+        <option value="fair">Fair</option>
+        <option value="poor">Poor</option>
+      </select>
+
+      <label for="comment">Comments:</label>
+      <textarea id="comment" name="comment"></textarea>
+
+      <button class="button-pulse" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
